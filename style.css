@@ -1,0 +1,10 @@
+body {
+    text-align: center !important;
+    background-color: aqua !important;
+}
+
+#camera {
+    border-width: 5px solid black !important;
+    height: 150px;
+    width: 200px;
+}

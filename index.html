@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="main.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Image recognizer</title>
+    </head>
+    <body>
+        <center>
+        <div class="container">
+        <h1>Image recognizer</h1>
+        <br>
+        <p style="font-size: 22px;">This can recognize the following items</p>
+        <b class="object_names">
+            Me
+            <br>
+            Plush
+            <br>
+            Pikachu
+        </b>
+        <h6>note pikachu is a plush</h6>
+
+        <div id="camera"></div>
+        <br><br>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="take_snapshot()" class="btn btn-info">Capture Image</button>
+        <br><br>
+        <button onclick="check()" class="btn btn-success">Identify Image</button>
+
+        <p style="font-size: 22px;">Object : <span id="result_object"></span>  </p>
+        <p style="font-size: 22px;">Accuracy : <span id="result_accuracy"></span> </p>
+
+        </center>
+        </div>
+    </body>
+</html>
+
+<!-- keep this link safe https://teachablemachine.withgoogle.com/models/0PikKOuW0/-->
